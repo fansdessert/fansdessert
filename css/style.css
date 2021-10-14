@@ -1,0 +1,197 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --color1:#1f755a;
+    --color2:#7a5402;
+}
+body{
+    width: 100%;
+    font-family: 'cwTeXYen',cwTeXYen;
+}
+#header{
+    width: 100vw;
+}
+#headerTxt{
+    position: absolute;
+    z-index: 2;
+    right: 10vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 10px;
+    writing-mode: vertical-rl;
+    color: var(--color2);
+}
+#header img{
+    width: 100vw;
+    z-index: 1;
+}
+
+#title{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    color: var(--color2);
+}
+.titletxt1{ 
+    font-size: 1.3rem; 
+    letter-spacing: 0.3rem;
+}
+.titletxt2{ 
+    letter-spacing: 0.8rem;
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+#slidePhoto{
+    display: flex;
+    width: 100vw;
+    margin: 30px auto;
+}
+
+.slideImg img{
+    width: 25vw;
+}
+
+.imgLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.imgRight{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+#info{
+    width: 100vw;
+    overflow: hidden;
+}
+
+.infoImg{
+    width: 35vw;
+    margin: 0px 5vw;
+}
+
+.infoTitleR{
+    z-index: 2;
+    position: relative;
+    right: -58vw;
+    top:15px;
+    font-size: 2rem;
+    padding: 0px 0px 0px 5vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--color2);
+}
+.infoTitleL{
+    z-index: 2;
+    position: relative;
+    right: -3vw;
+    top:15px;
+    font-size: 2rem;
+    padding: 0px 0px 0px 5vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--color2);
+}
+.infoBox{
+    z-index: 1;
+}
+.infoTxt{
+    font-size: 1.7rem;
+    background-color: rgba(255, 242, 206, 0.7);
+}
+
+.infoTxt p{
+    margin: 15px;
+    color: var(--color2);
+}
+
+#footer{
+    margin-top: 30px;
+    background-color: var(--color2);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+#footer p{
+    margin: 5px;
+}
+#footer img{
+    width: 15vw;
+}
+
+
+/* xs - Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #headerTxt{
+        font-size: 24px;
+        letter-spacing: 2px;
+        top: 10px;
+    }
+    .titletxt1{
+         font-size:16px; 
+    letter-spacing: 4px;
+    }
+    .titletxt2{
+         font-size: 24px;
+    letter-spacing: 4px;
+    }
+    .infoTitleL , .infoTitleR {
+        font-size: 24px;
+    }
+    .infoTxt{
+        font-size: 18px;
+    }
+    #footer img{
+        width: 150px;
+    }
+}
+
+/* sm - Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+        #headerTxt{
+        font-size: 24px;
+        letter-spacing: 2px;
+        top: 8px;
+    }
+}
+
+/* md - Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #headerTxt{
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        top: 40px;
+    }
+    #footer img{
+        width: 200px;
+    }
+}
+
+/* lg - Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #headerTxt{
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        top: 40px;
+    }
+}
+
+/* xl - Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #headerTxt{
+        font-size: 2.3rem;
+        letter-spacing: 1rem;
+        top: 60px;
+    }
+    .infoTxt{
+    font-size: 3rem;
+}
+}
